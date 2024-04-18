@@ -39,7 +39,7 @@ export default function Navbar() {
           )}
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mr-24">
+          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mr-24 ">
             {NavLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.href} title={link.title} />

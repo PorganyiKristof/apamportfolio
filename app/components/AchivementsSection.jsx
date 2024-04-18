@@ -27,7 +27,7 @@ const achievementsList = [
   }, */
   {
     metric: "Tapasztalat",
-    value: "15",
+    value: "30",
     postfix: "+",
   },
 ];
@@ -35,20 +35,20 @@ const achievementsList = [
 const AchievementsSection = () => {
   return (
     <div className="my-8 md:mb-0">
-      <div className="border-[#33353F] border rounded-md py-4 px-8 flex flex-row items-center justify-between">
+      <div className="border-[#33353F] border rounded-md py-4 px-8 flex flex-row items-center justify-center w-full md:w-fit">
         {achievementsList.map((achievement, index) => {
           return (
             <div
               key={index}
               className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
             >
-              <h2 className="text-white text-4xl font-bold flex flex-row">
+              <h2 className="text-black text-4xl font-bold flex flex-row">
                 {achievement.prefix}
                 <AnimatedNumbers
                   includeComma
                   animateToNumber={parseInt(achievement.value)}
                   locale="en-US"
-                  className="text-white text-4xl font-bold"
+                  className=" font-bold"
                   configs={(_, index) => {
                     return {
                       mass: 1,
@@ -56,10 +56,14 @@ const AchievementsSection = () => {
                       tensions: 140 * (index + 1),
                     };
                   }}
+                  fontStyle={{
+                    fontSize: 30,
+                    color: "black",
+                  }}
                 />
                 {achievement.postfix}
               </h2>
-              <p className="text-[#fff] text-base">{achievement.metric}</p>
+              <p className="text-black text-base">{achievement.metric}</p>
             </div>
           );
         })}

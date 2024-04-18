@@ -74,7 +74,7 @@ export default function EmailForm() {
         </div>
         <button
           type="submit"
-          className="bg-primary-950 border hover:bg-primary-600 text-white font-medium py-1.5 px-2 rounded-lg w-full"
+          className="bg-primary-950 border hover:bg-primary-800 text-white font-medium py-1.5 px-2 rounded-lg w-full"
         >
           Küldés
         </button>
