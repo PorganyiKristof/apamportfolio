@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="font-serif flex min-h-screen flex-col bg-gradient-to-br from-[#F2E9DC] to-[#D2B48C] overflow-hidden text-black">
       <Navbar />
-      <div className="container mx-auto mt-28 md:mt-0 px-12">
+      <div className="container mx-auto mt-28 md:mt-0 px-2 md:px-12">
         <HeroSection />
         <AboutSection />
         <ProjectSection />

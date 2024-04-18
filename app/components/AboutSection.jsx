@@ -34,10 +34,10 @@ export default function AboutSection() {
               opacity: 1,
             }
           }
-          className=" text-center lg:text-left px-12 flex flex-col justify-center"
+          className=" text-center lg:text-left flex flex-col justify-center"
         >
           <h1 className="text-4xl font-bold  my-4 text-primary-800">Rólam</h1>
-          <p className="text-base md:text-lg ">
+          <p className="text-base md:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae vel
             exercitationem qui, quod laboriosam provident velit. Aliquid
             corrupti placeat quasi debitis amet deleniti voluptate, sunt dolorem
