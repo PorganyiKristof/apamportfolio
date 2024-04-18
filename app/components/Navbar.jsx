@@ -16,7 +16,7 @@ const NavLinks = [
 export default function Navbar() {
   const [navbarOpen, setnavbarOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-gradient-to-r from-white/[0.2] to-black/[0.1] ">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-gradient-to-r from-white/[0.4] to-black/[0.4] ">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href={"/"} className="text-2xl text-white font-semibold sm:ml-24">
           <Image src="/images/logo.png" alt="logo" width="70" height="70" />
